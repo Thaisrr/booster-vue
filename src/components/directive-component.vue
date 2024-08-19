@@ -39,6 +39,9 @@
     <ul>
       <li v-for="f in fruits" v-bind:key="f">{{f}}</li>
     </ul>
+    <ul>
+      <li v-for="(f, index) in fruits" v-bind:key="f">{{f}} à l'index {{index}}</li>
+    </ul>
   </section>
 </template>
 
