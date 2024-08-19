@@ -45,3 +45,17 @@ On peut demander à n'importe quel attribut HTML d'interpréter du JS, au lieu d
 v-bind:attribut="valeur en js"
 ```
 
+
+## Les événements
+
+Sur chaque balise HTML, on peut ajouter un écouteur d'événement avec `v-on:nomévenement`
+
+```vue
+<button v-on:click="maFonction()">Click Click</button>
+```
+
+Cette syntaxe peut être raccourcie avec @
+```vue
+<button @click="maFonction()">Click Click</button>
+```
+

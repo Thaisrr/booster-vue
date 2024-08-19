@@ -1,7 +1,28 @@
 <script setup>
+
 const name = 'Toto';
 const bool = true;
 const maClasse = "toto";
+const myStyle = {
+  color: 'rebeccapurple',
+  textDecoration: 'underline',
+}
+
+function handleClick() {
+  alert('Coucou !');
+}
+
+function handleSubmit() {
+  console.log('Form saved !');
+}
+
+function handleCtrlEnter() {
+  console.log("Vous avez cliqué sur ctrl + entrée ");
+}
+
+function handleA() {
+  console.log('Vous avez cliqué sur A');
+}
 </script>
 
 <template>
@@ -26,11 +47,27 @@ const maClasse = "toto";
  </section>
   <section>
     <h2>Le style dynamique</h2>
-
     <p v-bind:style="{backgroundColor: 'aliceblue', fontSize : '20px'}">On peut passer du style dynamiquement </p>
+    <p v-bind:style="myStyle">Hello World !</p>
+  </section>
+  <section>
+    <h2>Les évenements</h2>
+
+    <button @click="handleClick()">Cliquez ici !</button>
+
+    <p @click="handleClick()"> Paragraphe ------
+      <button @click.stop="handleClick()">Bouton</button>
+    </p>
+
+    <form @submit.prevent="handleSubmit()">
+      <input @keydown.a.once="handleA()" @keydown.ctrl.enter="handleCtrlEnter()">
+      <button type="submit">Valider</button>
+    </form>
+
+
+
 
   </section>
-
 </template>
 
 <!-- scoped permet de bloquer le CSS à ce composant -->
