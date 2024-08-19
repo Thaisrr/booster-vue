@@ -59,3 +59,24 @@ Cette syntaxe peut être raccourcie avec @
 <button @click="maFonction()">Click Click</button>
 ```
 
+## Réactivité 
+
+Un concept clef de VueJS
+Elle permet de mettre à jour automatiquement le DOM en fonction des données.
+Il faut indiquer à Vue de surveiller l'état de ces données.
+Deux solution: 
+
+- ref() -> pour les données simples. Peut prendre n'importe quel type de donnée. 
+        -> Dans le script, pour accéder et modifier les données il faut passer `.value`
+
+```vue
+let foo = ref('toto');
+
+/*** reste du code **/
+console.log(foo.value)
+```
+
+Dans le Template, on utilise le nom de la variable, sans le `.value`.
+
+On ne mets des valeurs en réactive que si elles sont utilisées dans le DOM, et que leur
+modification implique une mise à jour de l'interface.
