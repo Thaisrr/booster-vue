@@ -1,6 +1,7 @@
 <script setup>
 // import PresentationComponent from "./components/presentation-component.vue";
-import ReactiviteComponent from "@/components/reactivite-component.vue";
+//import ReactiviteComponent from "@/components/reactivite-component.vue";
+import DirectiveComponent from "@/components/directive-component.vue";
 
 </script>
 
@@ -8,8 +9,9 @@ import ReactiviteComponent from "@/components/reactivite-component.vue";
   <!--
   <h1>Hello World</h1>
   <PresentationComponent />
-  -->
   <ReactiviteComponent />
+  -->
+  <DirectiveComponent />
 </template>
 
 <style></style>

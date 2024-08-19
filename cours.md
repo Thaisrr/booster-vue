@@ -80,3 +80,46 @@ Dans le Template, on utilise le nom de la variable, sans le `.value`.
 
 On ne mets des valeurs en réactive que si elles sont utilisées dans le DOM, et que leur
 modification implique une mise à jour de l'interface.
+
+## Directives
+
+Ce sont des attributs "HTML" de VueJS, qui permettent d'ajouter de la logique dans le template.
+
+Les directives sont préfixées de `v-`
+
+### v-show
+
+Affiche un block HTML si une condition est vrai.
+Sinon, n'affiche rien.
+
+```vue
+<p v-show="condition">S'affiche si la condition est vrai</p>
+```
+
+### v-if
+
+Permet d'afficher ou non un block en fonction d'une condition.
+Il existe aussi `v-else-if` et `v-else`
+
+```vue
+<p v-if="condition1"></p>
+<p v-else-if="condition2"></p>
+<p v-else></p>
+```
+
+
+Le `v-show` va créér l'élément en HTML, mais le mettre en `display: none` si il ne l'affiche pas.
+Le `v-if` recréé à chaque fois l'élément en JS.
+
+## v-for
+
+v-for permet de recréer un élément HTML ( ou un bloc d'éléments HTML) pour chaque item d'une liste.
+
+Attention, c'est `for ... in` et pas `for... of`.
+
+```vue
+<div v-for="el in liste">
+        <p>{{el}}</p>
+</div>
+```
+
