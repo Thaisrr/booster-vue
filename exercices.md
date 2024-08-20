@@ -38,3 +38,12 @@ Ce sont des objets qui contiennent :
 Afficher ces films sous forme de card dans le template.
 Si le film est vu, ajouter un badge ( une indication ), sinon, rien
 Ajouter un bouton pour marquer un film comme vu / pas vu.
+
+
+## Exercice 4
+
+Dans le projet "vue-booster-exo" : 
+- installer vue-router
+- configurer le router en suivant les étapes dans le cours.md
+- créer une route pour chacun des exercices 
+- créer une barre de navigation
