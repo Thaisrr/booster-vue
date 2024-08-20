@@ -167,3 +167,6 @@ routes: [
 ]
 ```
 
+On ajoute la balise `<router-view />` dans App.vue, à l'endroit où on souhaite que s'affichent les pages.
+
+Dans la barre de navigation, on n'utilise pas des <a> mais des `<router-link to="./lien">`
