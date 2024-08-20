@@ -113,9 +113,11 @@ Le `v-if` recréé à chaque fois l'élément en JS.
 
 ## v-for
 
+Pour afficher les listes.
 v-for permet de recréer un élément HTML ( ou un bloc d'éléments HTML) pour chaque item d'une liste.
 
 Attention, c'est `for ... in` et pas `for... of`.
+Il ne faut pas oublier de mettre également une clef unique sur chaque élément répété.
 
 ```vue
 <div v-for="el in liste" v-bind:key="clef_unique">
