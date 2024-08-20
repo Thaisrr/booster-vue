@@ -12,6 +12,11 @@
 SPA : Single Page Application
 -> Une application qui n'a qu'une page html ( public/index.html ), et dont le contenu va être injecté en JS.
 
+Lancer l'application : 
+- Pour lancer une application créée avec `vue create`, il faut utiliser le script `npm run serve`.
+- L'application se lance alors sur un port ( souvent, 8080 ), pour la visualiser, il faut ouvrir le navigateur sur l'adresse indiquée
+- ( par exemple `http://localhost:8080`)
+
 
 ## Les composants
 
