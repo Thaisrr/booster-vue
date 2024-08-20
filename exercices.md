@@ -47,3 +47,13 @@ Dans le projet "vue-booster-exo" :
 - configurer le router en suivant les étapes dans le cours.md
 - créer une route pour chacun des exercices 
 - créer une barre de navigation
+
+## Exercice 5
+
+Toujours dans le vue-booster-exo
+Installer vee-validate
+- Créer une nouvelle page 'SecretMessage', avec son chemin et son lien dans la nav
+- Créer un input
+- Créer un paragraphe qui contient un message secret, et qui ne s'affiche que si dans l'input
+l'utilisateur à entré le mot de passe "TarteAuxFraises"
+

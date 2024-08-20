@@ -170,3 +170,26 @@ routes: [
 On ajoute la balise `<router-view />` dans App.vue, à l'endroit où on souhaite que s'affichent les pages.
 
 Dans la barre de navigation, on n'utilise pas des <a> mais des `<router-link to="./lien">`
+
+## Les formulaires
+
+On peut relier la valeur d'une variable à celle d'un input avec `v-model`
+
+```vue
+<script setup>
+        let maVariable = '';
+</script>
+
+<template>
+        <input v-model="maVariable" />
+</template>
+```
+
+
+On peut gérer les formulaires avec librairie vee-validate
+
+```
+npm i vee-validate
+```
+
+

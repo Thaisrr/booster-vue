@@ -17,6 +17,9 @@
       <li>
         <router-link to="./reactivite">Réactivité</router-link>
       </li>
+      <li>
+        <router-link to="./form">Formulaires</router-link>
+      </li>
     </ul>
   </nav>
 
