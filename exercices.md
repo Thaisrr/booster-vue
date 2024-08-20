@@ -50,10 +50,26 @@ Dans le projet "vue-booster-exo" :
 
 ## Exercice 5
 
+Sans utiliser vee-validate !
 Toujours dans le vue-booster-exo
-Installer vee-validate
 - Créer une nouvelle page 'SecretMessage', avec son chemin et son lien dans la nav
 - Créer un input
 - Créer un paragraphe qui contient un message secret, et qui ne s'affiche que si dans l'input
 l'utilisateur à entré le mot de passe "TarteAuxFraises"
 
+## Exercice 6
+
+Installer vee-validate dans booster-vue-exo
+- créer une nouvelle page "Contact", avec son lien dans la barre de navigation
+Créer un formulaire de contact avec email, nom, message.
+- L'email doit être un email, non vide
+- le nom doit faire au moins 2 caractères, et non vide
+- le message ne doit pas être vide et faire entre 30 et 1000 caractères.
+-> Afficher un message différent en fonction de l'erreur ( Email obligatoire / Email invalide)
+
+## Exercice 7
+
+Ajouter un filtre pour la liste de film : 
+- trois bouton : 'Tous', 'Vu', 'Pas Vu'
+- Quand on clique sur un des boutons, afficher les films correspondants
+- tips: utiliser les computed

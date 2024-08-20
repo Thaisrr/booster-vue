@@ -5,6 +5,7 @@ import ReactiviteComponent from "@/pages/reactivite-component.vue";
 import HomeComponent from "@/pages/home-component.vue";
 import NotFound from "@/pages/NotFound.vue";
 import FormComponent from "@/pages/form-component.vue";
+import ComputedComponent from "@/pages/computed-component.vue";
 
 const router = createRouter({
     routes: [
@@ -13,6 +14,7 @@ const router = createRouter({
         {path: '/directives', component: DirectiveComponent},
         {path: '/reactivite', component: ReactiviteComponent},
         {path: '/form', component: FormComponent},
+        {path: '/computed', component: ComputedComponent},
         {path: '/accueil', redirect: '/'},
         {path: '/acceuil', redirect: '/'},
         {path: '/:pathMatch(.*)*', component: NotFound}

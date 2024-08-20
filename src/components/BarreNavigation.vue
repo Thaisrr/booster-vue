@@ -20,6 +20,9 @@
       <li>
         <router-link to="./form">Formulaires</router-link>
       </li>
+      <li>
+        <router-link to="./computed">Computed</router-link>
+      </li>
     </ul>
   </nav>
 

@@ -193,3 +193,11 @@ npm i vee-validate
 ```
 
 
+## Computed
+
+Un propriété computed est une propriété calculée, qui est mise à jour dans le dom quand les valeurs qu'elle surveille sont modifiées.
+( les valeurs surveillées doivent être des valeurs réactive (ref() ou reactive()))
+
+## Watcher
+
+Fonction qui surveille une valeur; qui fait quelque chose quand la valeur surveillée est modifiée.
