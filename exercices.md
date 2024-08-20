@@ -23,3 +23,17 @@ Créer une liste dans le script, qui contient des chaînes de caractère.
 - Si la liste est vide, afficher le message "Aucune course à afficher".
 - Sinon, afficher une liste des différentes courses à faire.
 
+- Pour chaque élément, ajouter un bouton pour le supprimer de la liste.
+
+
+## Exercice 3
+
+Créer une liste de films ( ou de séries )
+Ce sont des objets qui contiennent : 
+- titre (string)
+- image ( url )
+- isVue (booléen )
+
+Afficher ces films sous forme de card
+Si le film est vu, ajouter un badge ( une indication ).
+Ajouter un bouton pour marquer un film comme vu / pas vu.

@@ -118,7 +118,7 @@ v-for permet de recréer un élément HTML ( ou un bloc d'éléments HTML) pour 
 Attention, c'est `for ... in` et pas `for... of`.
 
 ```vue
-<div v-for="el in liste">
+<div v-for="el in liste" v-bind:key="clef_unique">
         <p>{{el}}</p>
 </div>
 ```
