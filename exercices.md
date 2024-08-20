@@ -28,12 +28,13 @@ Créer une liste dans le script, qui contient des chaînes de caractère.
 
 ## Exercice 3
 
-Créer une liste de films ( ou de séries )
+Dans un nouveau composant,
+Créer une liste de films dans le script ( ou de séries )
 Ce sont des objets qui contiennent : 
 - titre (string)
 - image ( url )
 - isVue (booléen )
 
-Afficher ces films sous forme de card
-Si le film est vu, ajouter un badge ( une indication ).
+Afficher ces films sous forme de card dans le template.
+Si le film est vu, ajouter un badge ( une indication ), sinon, rien
 Ajouter un bouton pour marquer un film comme vu / pas vu.

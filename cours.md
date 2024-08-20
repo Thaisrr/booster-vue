@@ -130,3 +130,40 @@ Il ne faut pas oublier de mettre également une clef unique sur chaque élément
 </div>
 ```
 
+### Les routes
+
+Installer `vue-router`
+```vue
+npm i vue-router
+```
+
+Configurer le router dans un fichier router/index.js : 
+```javascript
+const router = createRouter({
+        routes: [],
+        history: createWebHistory()
+})
+```
+
+en mode webHistory() sur le router, il est nécéssaire de configurer le serveur de production pour lui demander de toujours renvoyer la page index.html, quelque soit la requête.
+Documentation :
+https://router.vuejs.org/guide/essentials/history-mode#Example-Server-Configurations
+
+
+Indiquer, à l'app d'utiliser le router dans le fichier main.js
+```javascript
+import router from "./router";
+
+createApp(App)
+    .use(router)
+    .mount('#app')
+
+```
+
+On déclare les routes dans le fichier router/index.js sous forme d'un objet : 
+```javascript
+routes: [
+    {path: '/', componant: MonComposant},
+]
+```
+
