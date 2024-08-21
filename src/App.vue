@@ -1,14 +1,12 @@
 <script setup>
 import BarreNavigation from "@/components/BarreNavigation.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
 </script>
 
 <template>
   <BarreNavigation />
   <router-view />
-  <footer>
-    <hr/>
-    <p>M2I Formation | 2024</p>
-  </footer>
+  <FooterComponent />
 </template>
 
 <style></style>

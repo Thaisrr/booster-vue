@@ -201,3 +201,33 @@ Un propriété computed est une propriété calculée, qui est mise à jour dans
 ## Watcher
 
 Fonction qui surveille une valeur; qui fait quelque chose quand la valeur surveillée est modifiée.
+
+## Props : 
+
+Des attributs HTML personnalisés qui permettent de passer des informations d'un composant parent vers un composant enfant.
+
+Elles se définissent dans le composant enfant, avec la fonction `defineProps()`.
+Cette fonction peut prendre en paramétre soit un tableau de string ( chaque string correspond à une prop),
+Soit un objet, et chaque propriété correspond à une prop.
+
+```vue
+defineProps({
+    prop1 : Type,
+    prop2: {
+        type: Type,
+        required: true,
+        default: 'valeur par default'
+        validator: () => return true si OK; false si pas OK
+    }
+});
+```
+
+Les types acceptés sont : 
+- String
+- Number
+- Array
+- Function
+- Object
+- Boolean
+
+Pour les objets et les tableaux, la valeur par défaut doit être passée par une fonction qui retourne la valeur par défaut.

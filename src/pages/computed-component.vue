@@ -12,6 +12,7 @@ const filteredArray = computed(() => {
 })
 
 const fullname = computed(() => {
+  console.log('in computed')
   return `${firstname.value} ${lastname.value}`;
 });
 
@@ -20,9 +21,9 @@ const today = computed(() => {
 });
 
 function getFullName() {
+  console.log('in get full name')
   return `${firstname.value} ${lastname.value}`;
 }
-
 
 watch(firstname, (newValue, oldValue) => {
   console.log('Firstname a été modifié', newValue, oldValue);

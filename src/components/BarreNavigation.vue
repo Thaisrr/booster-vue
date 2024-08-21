@@ -23,6 +23,9 @@
       <li>
         <router-link to="./computed">Computed</router-link>
       </li>
+      <li>
+        <router-link to="./parent">Composant Parent</router-link>
+      </li>
     </ul>
   </nav>
 
