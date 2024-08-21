@@ -73,3 +73,17 @@ Ajouter un filtre pour la liste de film :
 - trois bouton : 'Tous', 'Vu', 'Pas Vu'
 - Quand on clique sur un des boutons, afficher les films correspondants
 - tips: utiliser les computed
+
+## Exercice 8
+
+Ajouter un bouton "supprimer" sur les films pour supprimer un film.
+
+## Exercice 9
+
+Créer un composant "FormulaireComponent"
+- Ce formulaire attends une valeur "titre", qui sera affichée dans un h2
+- Deux input (titre, imageUrl ), un bouton de soumission
+- Envoie un emit qui contient la valeur de l'input
+Côté parent (ListeFilm)
+- Afficher le formulaire
+- Récupérer la valeur de l'emit pour créer un film, et l'ajouter à la liste.
