@@ -5,8 +5,16 @@ import FooterComponent from "@/components/FooterComponent.vue";
 
 <template>
   <BarreNavigation />
-  <router-view />
+  <main>
+    <router-view />
+  </main>
   <FooterComponent />
 </template>
 
-<style></style>
+<style>
+main {
+  width: 80%;
+  margin: auto;
+}
+
+</style>

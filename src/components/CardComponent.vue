@@ -1,4 +1,5 @@
 <script setup>
+const emit = defineEmits(['remove']);
 const props = defineProps({
   user: {
     type: Object,
@@ -9,6 +10,10 @@ const props = defineProps({
   }
 });
 
+function handleRemove() {
+  emit('remove', props.user);
+}
+
 console.log(props.user);
 
 </script>
@@ -17,7 +22,7 @@ console.log(props.user);
   <article>
     <h3>{{user.name}}</h3>
     <p>{{user.email}}</p>
-    <button @click="$emit('remove', user)">Supprimer</button>
+    <button @click="handleRemove()">Supprimer</button>
   </article>
 </template>
 

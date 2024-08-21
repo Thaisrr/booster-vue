@@ -7,6 +7,7 @@ import NotFound from "@/pages/NotFound.vue";
 import FormComponent from "@/pages/form-component.vue";
 import ComputedComponent from "@/pages/computed-component.vue";
 import ParentComponent from "@/pages/parent-component.vue";
+import RouterBis from "@/pages/router-bis.vue";
 
 const router = createRouter({
     routes: [
@@ -17,6 +18,12 @@ const router = createRouter({
         {path: '/form', component: FormComponent},
         {path: '/computed', component: ComputedComponent},
         {path: '/parent', component: ParentComponent},
+        {
+            path: '/router/:message',
+            name: 'router',
+            component: RouterBis,
+            props: (route) => ({ message: route.params.message.toUpperCase()}),
+        },
         {path: '/accueil', redirect: '/'},
         {path: '/acceuil', redirect: '/'},
         {path: '/:pathMatch(.*)*', component: NotFound}

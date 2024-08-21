@@ -87,3 +87,19 @@ Créer un composant "FormulaireComponent"
 Côté parent (ListeFilm)
 - Afficher le formulaire
 - Récupérer la valeur de l'emit pour créer un film, et l'ajouter à la liste.
+
+
+## TP : 
+
+Une pizzeria vous demande de créer son site en VueJS
+/!\ le site aura plusieurs pages, il faut donc Vue Router
+-Sur la page d'accueil, afficher la liste des pizzas
+- Permettre le tri des pizzas ( par base ( créme, tomate), par prix);
+- Une pizza à : 
+  - nom
+  - base
+  - liste d'ingrédients ( tableau )
+  - prix
+  - bestSeller ( boolean )
+
+=> Chaque pizza doit être affichée dans un composant propre
