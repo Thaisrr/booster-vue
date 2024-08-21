@@ -90,15 +90,16 @@ Côté parent (ListeFilm)
 
 
 ## TP : 
-
+M2I Pizza
 Une pizzeria vous demande de créer son site en VueJS
 /!\ le site aura plusieurs pages, il faut donc Vue Router
 -Sur la page d'accueil, afficher la liste des pizzas
 - Permettre le tri des pizzas ( par base ( créme, tomate), par prix);
 - Une pizza à : 
+  - id
   - nom
   - base
-  - liste d'ingrédients ( tableau )
+  - liste d'ingrédients ( tableau ) 
   - prix
   - bestSeller ( boolean )
 
