@@ -231,3 +231,33 @@ Les types acceptés sont :
 - Boolean
 
 Pour les objets et les tableaux, la valeur par défaut doit être passée par une fonction qui retourne la valeur par défaut.
+
+## Slot
+
+Les slots sont des valeurs du template qu'on passe d'un composant parent à un composant enfant.
+
+```vue
+/* parent */
+<Enfant>
+        Valeur de template en texte ou HTML
+</Enfant>
+
+
+/* enfant */
+<div>
+        <slot />
+</div>
+```
+
+## Emit
+
+Les événements personnalisés ou emits sont des événements envoyés d'un enfant à un parent.
+Le parent peut alors y réagir dans une fonction.
+
+```vue
+/*** enfant ***/
+<button @click="emit('nomEvent', ...paramétres)"></button>
+
+/*** parent ***/
+<Enfant @nomEvent="fonctionAAppeler"></Enfant>
+```
