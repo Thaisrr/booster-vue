@@ -1,7 +1,9 @@
 <script setup>
 import {ref} from "vue";
+import {useCounterStore} from "@/store/counter";
 
 const nav = ref(null);
+const store = useCounterStore();
 
 function changeColor() {
   if(nav.value) {
@@ -39,8 +41,12 @@ function changeColor() {
         <router-link v-bind:to="{name: 'router', params: {message: 'Hello World'} }">Router Bis</router-link>
       </li>
       <li>
+        <router-link to="./store">Stores</router-link>
+      </li>
+      <li>
         <button @click="changeColor()">Go Yellow !</button>
       </li>
+      <li>{{store.counter}}</li>
     </ul>
   </nav>
 

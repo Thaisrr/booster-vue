@@ -8,6 +8,7 @@ import FormComponent from "@/pages/form-component.vue";
 import ComputedComponent from "@/pages/computed-component.vue";
 import ParentComponent from "@/pages/parent-component.vue";
 import RouterBis from "@/pages/router-bis.vue";
+import StoreComponent from "@/pages/store-component.vue";
 
 const router = createRouter({
     routes: [
@@ -24,6 +25,7 @@ const router = createRouter({
             component: RouterBis,
             props: (route) => ({ message: route.params.message.toUpperCase()}),
         },
+        {path: '/store', component: StoreComponent},
         {path: '/accueil', redirect: '/'},
         {path: '/acceuil', redirect: '/'},
         {path: '/:pathMatch(.*)*', component: NotFound}

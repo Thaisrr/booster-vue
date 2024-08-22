@@ -89,6 +89,18 @@ Côté parent (ListeFilm)
 - Récupérer la valeur de l'emit pour créer un film, et l'ajouter à la liste.
 
 
+## Exercice 10
+
+- Dans le projet vue-booster-exo, installer pinia
+- Configurer pinia dans main.js
+- créer un store 'UserStore
+- Créer une nouvelle page "LoginComposant" ( + créer sa route et son lien )
+- Dans logincomposant créer un formulaire / un input pour récupérer le nom de l'utilisateur.
+- Enregistrer ce nom dans un store
+- Sur la page d'accueil, récupérer le nom de l'utilisateur, et écrire "Bienvenue Nom" si il y a un nom,
+- et "Veuillez vous connecter", si il n'y a pas de nom.
+
+
 ## TP : 
 M2I Pizza
 Une pizzeria vous demande de créer son site en VueJS
