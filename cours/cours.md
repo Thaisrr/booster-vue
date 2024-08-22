@@ -261,3 +261,55 @@ Le parent peut alors y réagir dans une fonction.
 /*** parent ***/
 <Enfant @nomEvent="fonctionAAppeler"></Enfant>
 ```
+
+## Les stores
+
+Les stores sont un design pattern courant en VueJS
+Il permet de centraliser la gestion de données dont plusieurs composants auraient besoin dans l'application.
+Le store de VueJS est pinia
+
+```
+npm i pinia
+```
+
+Pour initialiser le store, il faut l'importer dans le fichier main.js: 
+```js
+const pinia = createPinia();
+
+app.use(pinia)
+    .mount('#app')
+```
+
+Ensuite, il faut créer un store, qui surveillera une ou plusieurs valeurs.
+Un store contient 3 parties : 
+- le state, qui définie l'état initial des valeurs, sous forme d'une fonction qui retourne un objet de valeurs,
+- les actions, un objet de méthodes qui permettent de modifier la valeur
+- les getters, qui permettent de retourner une valeur calculer à partir du state.
+
+```js
+export const useMonStore = defineStore('nom unique', {
+    state: () => ({valeur1: "valeur par défaut"}),
+    actions: {
+        update(newVal) {
+            this.valeur1 = newVal;
+        }
+    },
+    getters: {
+        upperVal: (state) => state.valeur1.toUpperCase()
+    }
+})
+```
+
+Une nouvelle syntaxe permet de créer le store dans une fonction setup, dont la syntaxe est équivalente à celle d'un composant : 
+Les states deviennent des refs(), les actions des fonctions, et les getters des computed.
+
+```js
+export const useMonStore = defineStore('nom unique', () => {
+    const val1 = ref('valeur par défaut');
+    function update(newVal) {
+        val1.value = newVal;
+    }
+    const upperVal = computed(() => val1.value.toUpperCase())
+}
+
+```
