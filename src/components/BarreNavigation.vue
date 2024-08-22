@@ -44,6 +44,15 @@ function changeColor() {
         <router-link to="./store">Stores</router-link>
       </li>
       <li>
+        <router-link to="./binding">Binding</router-link>
+      </li>
+      <li>
+        <router-link to="./life">Lifecycle</router-link>
+      </li>
+      <li>
+        <router-link to="./composable">Composable</router-link>
+      </li>
+      <li>
         <button @click="changeColor()">Go Yellow !</button>
       </li>
       <li>{{store.counter}}</li>
@@ -69,6 +78,7 @@ ul {
   gap: 20px;
   padding: 15px 0;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 ul a:link, a:visited {
