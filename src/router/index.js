@@ -12,6 +12,7 @@ import StoreComponent from "@/pages/store-component.vue";
 import BindingComponent from "@/pages/binding-component.vue";
 import LifecycleComponent from "@/pages/lifecycle-component.vue";
 import ComposableComponent from "@/pages/composable-component.vue";
+import ApiComponent from "@/pages/api-component.vue";
 
 const router = createRouter({
     routes: [
@@ -32,6 +33,7 @@ const router = createRouter({
         {path: '/binding', component: BindingComponent},
         {path: '/life', component: LifecycleComponent},
         {path: '/composable', component: ComposableComponent},
+        {path: '/api', component: ApiComponent},
         {path: '/accueil', redirect: '/'},
         {path: '/acceuil', redirect: '/'},
         {path: '/:pathMatch(.*)*', component: NotFound}

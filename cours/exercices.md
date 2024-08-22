@@ -100,6 +100,17 @@ Côté parent (ListeFilm)
 - Sur la page d'accueil, récupérer le nom de l'utilisateur, et écrire "Bienvenue Nom" si il y a un nom,
 - et "Veuillez vous connecter", si il n'y a pas de nom.
 
+## Exercice 11
+
+URL: https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit
+
+Créer un nouveau composant JokeComponent
+Utiliser l'url si dessus pour charger une blague.
+Afficher la blague dans un composant
+Créer un bouton qui permet de relancer la requête pour afficher une nouvelle blague/
+Attention, les blagues peuvent avoir 2 formes différentes : 
+- joke : la blague 
+- setup (question) / delivery (réponse)
 
 ## TP : 
 M2I Pizza
