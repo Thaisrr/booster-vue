@@ -135,6 +135,7 @@ Une pizzeria vous demande de créer son site en VueJS
 
 --- Ajouter un crud : 
 - les pizzas vont être récupérée depuis une API ( JSON-SERVER )
-- créer une page admin pour créer des nouvelles pizzas, 
 - une page admin pour voir la liste des pizzas dans un tableau, avec un bouton pour supprimer
+- BONUS : 
+- créer une page admin pour créer des nouvelles pizzas,
 - une page pour modifier une pizza
