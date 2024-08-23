@@ -127,3 +127,14 @@ Une pizzeria vous demande de créer son site en VueJS
   - bestSeller ( boolean )
 
 => Chaque pizza doit être affichée dans un composant propre
+
+--- Ajouter un système de panier : 
+- on peut ajouter une pizza au panier
+- le nombre d'éléments dans le panier est affiché dans la barre de navigation
+- on a une page "panier" qui permet de voir le panier
+
+--- Ajouter un crud : 
+- les pizzas vont être récupérée depuis une API ( JSON-SERVER )
+- créer une page admin pour créer des nouvelles pizzas, 
+- une page admin pour voir la liste des pizzas dans un tableau, avec un bouton pour supprimer
+- une page pour modifier une pizza

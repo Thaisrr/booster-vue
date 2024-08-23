@@ -1,11 +1,11 @@
 import axios from "axios";
 
 export function useUpdateUser() {
-    const API = 'http://localhost:3000/users';
+    const API = 'http://localhost:3000/users/';
 
-    function update(user) {
+    async function update(id, user) {
         try {
-            const res = axios.put(API, user);
+            const res = await axios.put(API + id, user);
             return res.data;
         } catch (e) {
             console.log(e)
