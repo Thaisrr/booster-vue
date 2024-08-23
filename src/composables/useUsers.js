@@ -2,7 +2,7 @@ import {onMounted, ref} from "vue";
 import axios from "axios";
 
 export function useUsers() {
-    const API = 'https://jsonplaceholder.typicode.com/users';
+    const API = 'http://localhost:3000/users';
     const users = ref(null);
     const error = ref('');
     async function load() {

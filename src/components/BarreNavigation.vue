@@ -56,6 +56,9 @@ function changeColor() {
         <router-link to="./api">API</router-link>
       </li>
       <li>
+        <router-link to="./crud">Crud</router-link>
+      </li>
+      <li>
         <button @click="changeColor()">Go Yellow !</button>
       </li>
       <li>{{store.counter}}</li>
