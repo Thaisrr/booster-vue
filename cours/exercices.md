@@ -126,7 +126,7 @@ Une pizzeria vous demande de créer son site en VueJS
   - prix
   - bestSeller ( boolean )
 
-=> Chaque pizza doit être affichée dans un composant propre
+=> Chaque pizza doit être affichée dans un composant réutilisable
 
 --- Ajouter un système de panier : 
 - on peut ajouter une pizza au panier
