@@ -313,3 +313,21 @@ export const useMonStore = defineStore('nom unique', () => {
 }
 
 ```
+
+## JSON SERVER
+
+- Installer globalement la librairie `npm i -g json-server` - une seule fois par machine
+- Créer un fichier db.json qui contient les entry points de chaque données
+
+```json
+{
+        "data1": [],
+        "data2": []
+}
+```
+- Pour le lancer depuis un projet : créer un script dans le projet, qui contient la commande
+- `json-server --watch ./db/db.json` ( attention à bien mettre le bon lien vers voter fichier json)
+- Lancer l'API avec le script nouvellement créé
+- `npm run monscript`
+
+Plus de doc: https://github.com/typicode/json-server/tree/v0
