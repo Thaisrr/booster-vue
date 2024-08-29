@@ -5,9 +5,17 @@ export function useUsers() {
     const API = process.env.VUE_APP_API_URL;
     const users = ref(null);
     const error = ref('');
+    let token = localStorage.getItem('token') || undefined;
+    let headers = {};
+    if(token) {
+        headers.Authorization = `Bearer ${token}`
+    }
+
     async function load() {
         try {
-            const res = await axios.get(API);
+            const res = await axios.get(API,
+                /*{ headers} --- ne fonctionne pas avec Json-server ***/
+            );
             users.value = res.data;
 
             //const res = await fetch(API);

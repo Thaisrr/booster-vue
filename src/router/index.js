@@ -14,6 +14,7 @@ import LifecycleComponent from "@/pages/lifecycle-component.vue";
 import ComposableComponent from "@/pages/composable-component.vue";
 import ApiComponent from "@/pages/api-component.vue";
 import CrudComponent from "@/pages/crud-component.vue";
+import LoginComponent from "@/pages/login-component.vue";
 
 const router = createRouter({
     routes: [
@@ -36,6 +37,7 @@ const router = createRouter({
         {path: '/composable', component: ComposableComponent},
         {path: '/api', component: ApiComponent},
         {path: '/crud', component: CrudComponent},
+        {path: '/login', component: LoginComponent},
         {path: '/accueil', redirect: '/'},
         {path: '/acceuil', redirect: '/'},
         {path: '/:pathMatch(.*)*', component: NotFound}

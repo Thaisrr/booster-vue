@@ -1,6 +1,10 @@
 <script setup>
 import {ref} from "vue";
 import {useCounterStore} from "@/store/counter";
+import {useAuth} from "@/store/auth";
+import {useLogin} from "@/composables/useLogin";
+
+const {logout} = useLogin();
 
 const nav = ref(null);
 const store = useCounterStore();
@@ -10,6 +14,8 @@ function changeColor() {
     nav.value.style.background = 'yellow';
   }
 }
+
+const authStore = useAuth();
 
 </script>
 
@@ -57,6 +63,12 @@ function changeColor() {
       </li>
       <li>
         <router-link to="./crud">Crud</router-link>
+      </li>
+      <li v-if="!authStore.isLogged">
+        <router-link to="./login">Login</router-link>
+      </li>
+      <li v-else>
+        <button @click="logout()">Logout</button>
       </li>
       <li>
         <button @click="changeColor()">Go Yellow !</button>
